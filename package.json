@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"lol\"",
-    "postinstall": "node postinstall.js"
+    "postinstall": "node postinstall.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "preferGlobal": true,
   "bin": {
@@ -42,6 +44,8 @@
     "pify": "^2.3.0",
     "shelljs": "^0.6.0",
     "update-notifier": "^0.6.0",
-    "user-home": "^2.0.0"
-  }
+    "user-home": "^2.0.0",
+    "snyk": "^1.88.0"
+  },
+  "snyk": true
 }
